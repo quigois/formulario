@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 Formulario</title>
+  <link rel="stylesheet" href="estilos.css">
+  </head>
+
+  <header><h1 id="title">Primer formulario con CSS y HTML</h1>
+    <p id="description">Rellenar el formulario con información personal veridica por favor, de lo contrario revise la ley puede hacer las multas pertinentes.
+    </p>
+  </header>
+    <body>
+    <form id="survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required> 
+        </input>
+      </div>
+      
+          <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su correo" required> 
+        </input>
+      </div>
+  
+      <div class="form-group">
+      <label id="number-label" for="edad">Edad (opcional)</label>
+      <input type="number" min="18" max="70" name="number" id="number" class="form-control" placeholder="Ingrese su edad" required> 
+        </input>
+      </div>
+
+    <div class="form-group">
+      <p>¿Cual es el rol que desarrollas?</p>
+      <select id="dropdown" name="rol" class="form-control" required>
+        <option disabled selected value>Selecciona tu rol</option>
+        <option id="estudiante">Estudiante</option>
+          <option id="trabajo">Trabajo de tiempo completo</option>
+          <option id="medio">Estudiante de tiempo completo</option>
+          <option id="no-say">Prefiere no decirlo</option>
+          <option id="otro">Otro</option>
+      </select>
+      </div>
+<div class="form-group">
+  <p>¿Recomendarias la certificacion de Freecodecamp a un amigo?</p>
+  <label>
+    <input name="recomendar" type="radio" value="definitivamente" chequed class="input-radio">Definitivamente<br> 
+    </input>
+  </label>
+
+ <label>
+    <input name="recomendar" type="radio" value="quiza" chequed class="input-radio">Quiza<br> 
+    </input>
+  </label>
+
+ <label>
+    <input name="recomendar" type="radio" value="paranada" chequed class="input-radio">Para nada<br> 
+    </input>
+  </label>
+</div>
+
+<div class="form-group">
+  <p>¿Cuál es tu función favorita de freeCodeCamp?
+    </p>
+  <select id="gusta" name="gusta" class="form-control">
+    <option disabled selected value>Selecciona una opcion</option>
+    <option>Retos</option>
+     <option>Proyectos</option>
+     <option>Comunidad</option>
+     <option>Codigo libre</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <p>
+    ¿Qué te gustaría ver mejorado? (Marque todo lo que corresponda)</p>
+  <label id="label-box">
+    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects <br></input>
+  
+  <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects<br> </input>
+
+<input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization<br> </input>
+
+<input name="prefer" value="open-source-comunity" type="checkbox" class="input-checkbox">Open Source Comunity<br> </input>
+
+<input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos<br> </input>
+
+<input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups<br> </input>
+
+<input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki<br> </input>
+
+<input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum<br> </input>
+
+<input name="prefer" value="aditional-courses" type="checkbox" class="input-checkbox">Aditional Courses<br> </input>
+  </label>
+</div>
+
+<div class="form-group">
+   <label>
+     <p>Desea dejarnos algun comentario o sugerencia
+       </p>
+     <textarea id="comments" class="input-textarea" name="comments" placeholder="Ingrese su comentario aqui....."></textarea>
+  </label>
+  </div>
+
+<div class="form-group">
+  <button type="submit" id="submit" class="submit-button">Enviar Formulario
+  </button>
+</div>
+    </form>
+    </body>
+</html>
+
+</body>
+</html>
+
